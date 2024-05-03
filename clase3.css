@@ -1,0 +1,49 @@
+/* ul lista no ordenada*/ 
+/*li lista ordenada*/
+
+body{
+    background-color: brown;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+a{
+    text-decoration: none; /*quita linea abajo*/
+    color: inherit;
+}
+
+ul{
+    background-color: white;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    border: 1px dashed;
+    background-color: yellow;
+    padding: 0.3rem 0.7rem; /*unidad de medida*/
+}
+
+ul{
+    display: flex; /*se pone al lado izquierdo primero el ultimo*/
+    
+    /*flex-direction: row-reverse; .....se pone al lado derecho*/
+    
+    /*flex-direction: row; */
+    
+    /*flex-wrap: wrap; ........ se acomoda el menu*/ 
+    
+    /*justify-content: flex-end; ......se acomoda el menu y primero el inicio*/
+    /*justify-content: space-between; .........se separa el menu, EJEMPLO: INICIO         CONTACTO            SOBRENOSORROS*/
+    /* justify-content: flex-end; */
+    
+    /* height: 200px;*/
+    /* align-items: flex-end; */
+
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    height: 100px;
+    align-items: center;
+}
+
